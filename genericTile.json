@@ -1,0 +1,59 @@
+{
+  "id": "com.sap.sac.genericTile",
+  "version": "0.0.1",
+  "name": "genericTile",
+  "description": "SAP UI5 Generic Tile",
+  "newInstancePrefix": "genericTile",
+  "icon": "https://sarvaniyellajosyula.github.io/sacCustomWidgets/genericTileimg.ico",
+  "vendor": "Sarvani Yellajosyula",
+  "eula": "",
+  "license": "",
+  "imports": [ "input-controls" ],
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sac-genericTile",
+      "url": "https://sarvaniyellajosyula.github.io/sacCustomWidgets/genericTile.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "metadata": {
+      "type": "string",
+      "description": "For internal use",
+      "default": ""
+    },
+    "tileId": {
+      "type": "string",
+      "description": "tileId",
+      "default": ""
+    }
+  },
+  "methods": {
+    "getDate": {
+      "returnType": "string",
+      "description": "Get TileID",
+      "parameters": [],
+      "body": "return this.tileId;"
+    },
+    "setDate": {
+      "description": "Set TileID",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The Tile ID"
+        }
+      ],
+      "body": "this.tileId = tileId;"
+    }
+
+  },
+  "events": {
+    "onClick": {
+      "description": "onCLick of the Tile"
+    }
+ 
+  }
+}
