@@ -31,24 +31,6 @@
     }
   },
   "methods": {
-    "getDate": {
-      "returnType": "string",
-      "description": "Get TileID",
-      "parameters": [],
-      "body": "return this.tileId;"
-    },
-    "setDate": {
-      "description": "Set TileID",
-      "parameters": [
-        {
-          "name": "value",
-          "type": "string",
-          "description": "The Tile ID"
-        }
-      ],
-      "body": "this.tileId = tileId;"
-    }
-
   },
   "events": {
     "onClick": {
