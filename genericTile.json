@@ -28,7 +28,15 @@
       "type": "string",
       "description": "tileId",
       "default": ""
-    }
+    },
+	  "width": {
+			"type": "integer",
+			"default": 100
+		},
+		"height": {
+			"type": "integer",
+			"default": 100
+		}
   },
   "methods": {
 	  "onTileClick": {
