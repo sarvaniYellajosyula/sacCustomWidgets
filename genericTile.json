@@ -47,6 +47,9 @@
     "onClick": {
       "description": "onCLick of the Tile"
     }
+	"onLoad": {
+      "description": "onCLick of the Tile"
+    }
  
   }
 }
