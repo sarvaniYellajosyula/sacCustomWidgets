@@ -212,7 +212,16 @@
                                 settings: this.settings
                             }
                         }));
-                    }
+                    },
+					header: function(oEvent) {
+						console.log("The Header Loading.");
+						this.settings = {};
+                        that.dispatchEvent(new CustomEvent("onLoad", {
+                            detail: {
+                                settings: this.settings
+                            }
+                        }));
+					}
                 });
             });
 
