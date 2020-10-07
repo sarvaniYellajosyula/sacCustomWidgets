@@ -45,7 +45,7 @@
              _shadowRoot.querySelector("#oView").id = _id + "_oView";
 
              this._export_settings = {};
-             this._export_settings.date = "";
+         //    this._export_settings.date = "";
 
              this.addEventListener("click", event => {
                
@@ -158,27 +158,20 @@
 
 
          _firePropertiesChanged() {
-             this.date = "";
+             this.tileId = "";
              this.dispatchEvent(new CustomEvent("propertiesChanged", {
                  detail: {
                      properties: {
-                         date: this.date
+                         tileId: this.tileId
                      }
                  }
              }));
          }
          // SETTINGS
-         get date() {
-             return this._export_settings.date;
-         }
-
-         set date(value) {
-             value = _genericTile;
-             this._export_settings.date = value;
-         }
+      
          static get observedAttributes() {
              return [
-                 "date"
+                 "tileId"
              ];
          }
          attributeChangedCallback(name, oldValue, newValue) {
@@ -188,7 +181,7 @@
          }
          
      }
-    customElements.define("com-sap-sac-datepicker", GenericTile);
+    customElements.define("com-sap-sac-genericTile", GenericTile);
 
     // UTILS
     function loadthis(that) {
