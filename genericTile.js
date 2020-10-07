@@ -197,15 +197,13 @@
             //### Controller ###
             sap.ui.define([
                 "jquery.sap.global",
-                "sap/ui/core/mvc/Controller",
-		"sap/m/MessageToast"
+                "sap/ui/core/mvc/Controller"
             ], function (jQuery, Controller) {
                 "use strict";
 
                 return Controller.extend("sap.m.sample.GenericTileAsLaunchTile.Page", {
                     press: function (oEvent) {
                         console.log("The GenericTile is pressed.");
-                        MessageToast.show("The GenericTile is pressed.");
                     }
                 });
             });
