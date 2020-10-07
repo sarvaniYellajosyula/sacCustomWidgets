@@ -1,6 +1,6 @@
 {
   "id": "com.sap.sac.genericTile",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "genericTile",
   "description": "SAP UI5 Generic Tile",
   "newInstancePrefix": "genericTile",
@@ -24,19 +24,19 @@
       "description": "For internal use",
       "default": ""
     },
-    "tileId": {
+    "header": {
       "type": "string",
-      "description": "tileId",
+      "description": "tile headerId",
       "default": ""
     },
-	  "width": {
+	"width": {
 			"type": "integer",
 			"default": 100
 		},
-		"height": {
+	"height": {
 			"type": "integer",
 			"default": 100
-		}
+	}
   },
   "methods": {
 	  "onTileClick": {
