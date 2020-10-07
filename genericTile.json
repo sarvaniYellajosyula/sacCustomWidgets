@@ -31,6 +31,9 @@
     }
   },
   "methods": {
+	  "onTileClick": {
+		  "description": "Tile is clicked",
+		}
   },
   "events": {
     "onClick": {
