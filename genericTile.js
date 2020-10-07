@@ -233,7 +233,7 @@
 
            
             if (that_._designMode) {
-                oView.byId("GrossMargin").setEnabled(false);
+                oView.byId("GrossMargin").setEnabled(true);
             }
         });
     }
