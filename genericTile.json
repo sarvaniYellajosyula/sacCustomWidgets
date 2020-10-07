@@ -32,7 +32,7 @@
   },
   "methods": {
 	  "onTileClick": {
-		  "description": "Tile is clicked",
+		  "description": "Tile is clicked"
 		}
   },
   "events": {
