@@ -12,7 +12,7 @@
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "com-sap-sac-genericTile",
+      "tag": "com-sap-sac-generictile",
       "url": "https://sarvaniyellajosyula.github.io/sacCustomWidgets/genericTile.js",
       "integrity": "",
       "ignoreIntegrity": true
