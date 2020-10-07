@@ -181,7 +181,7 @@
          }
          
      }
-    customElements.define("com-sap-sac-generictile", GenericTile);
+    customElements.define("com-sap-sac-generictile", genericTile);
 
     // UTILS
     function loadthis(that) {
