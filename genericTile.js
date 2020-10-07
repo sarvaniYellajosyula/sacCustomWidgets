@@ -204,6 +204,14 @@
                 return Controller.extend("sap.m.sample.GenericTileAsLaunchTile.Page", {
                     press: function (oEvent) {
                         console.log("The GenericTile is pressed.");
+						this.settings = {};
+                      //  this.settings.password = "";
+
+                        that.dispatchEvent(new CustomEvent("onClick", {
+                            detail: {
+                                settings: this.settings
+                            }
+                        }));
                     }
                 });
             });
